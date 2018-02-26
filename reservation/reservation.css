@@ -1,0 +1,13 @@
+@import url("../nirvana.css");
+
+span {
+	color: green;
+}
+
+body {
+	background-color: white;
+}
+
+p {
+	padding-top: 200px;
+}
