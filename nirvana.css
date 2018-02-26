@@ -170,7 +170,6 @@ iframe {
     box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
             -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
             margin: 0 auto;
-    padding-top: 50px;
 }
 
 .activites p {
@@ -188,11 +187,10 @@ iframe {
     flex-direction: column;
     text-align: left;
     width: 50%;
-    border: 1px solid black;
+    justify-content: space-between;
 }
 
 .actext {
-    border: 1px solid black;
     width: 50%;
 }
 
