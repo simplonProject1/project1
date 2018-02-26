@@ -1,7 +1,7 @@
 html {
 	background-color: black;
 }
-#page { 
+#page, #activites { /*ajout id service.html*/
 	width: 1000px;
 	margin: auto;
 	background-color: #DCDCDC;
@@ -9,7 +9,6 @@ html {
 }
 
 body {
-	background-color: ;
 	font-family: verdana, "dejavu sans", "bitstream vera sans", geneva, sans-serif;
 }
 
@@ -54,10 +53,6 @@ h1 {
 h2{
 	text-align: center;
 	font-family: URW Chancery L, cursive;
-}
-
-h3 {
-
 }
 .boat {
 	margin-top: 60px;
@@ -113,11 +108,8 @@ footer{
     font-weight: bold;
     text-align: center;
     background-image: url(swirl-clipart-black-and-white-4.png);
-
-
-
-
 }
+
 .imageFlottante{
 align-items: center;
 
@@ -154,3 +146,55 @@ border-radius: 5px;
 .imgfoot{
     margin-top: 100px;
 }
+
+iframe {
+    display: block;
+    margin: auto;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+            -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
+}
+
+#activites {
+    font-size: 18px;
+}
+
+.activites {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+}
+
+.activites img {
+    border-radius: 3px;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+            -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
+            margin: 0 auto;
+    padding-top: 50px;
+}
+
+.activites p {
+    width: 40%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.actFoot {
+    padding-top: 50px;
+}
+
+.actimg {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.actext {
+    border: 1px solid black;
+    width: 50%;
+}
+
+/*box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+            -1px 2px 20px rgba(255, 255, 255, 0.6) inset;*/
