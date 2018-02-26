@@ -1,13 +1,24 @@
 @import url("../nirvana.css");
 
-span {
-	color: green;
-}
-
 body {
-	background-color: white;
+	color: white;
 }
 
-p {
-	padding-top: 200px;
+.chooseATrip {
+	padding-top: 150px;
+}
+
+.price {
+	padding-top: 150px;
+	display: none;
+}
+
+.fillUpForm {
+	padding-top: 150px;
+	display: none;
+}
+
+.confirmation {
+	padding-top: 150px;
+	display: none;
 }

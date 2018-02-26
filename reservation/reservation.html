@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>reservation</title>
 		<link rel="stylesheet" type="text/css" href="reservation.css"/>
 	</head>
 	<body>
@@ -17,6 +17,56 @@
 				<li><a href="../contact/contact.html">contact</a></li>
 			</ul>
 		</nav>
-		<p><span>reservation</span></p>
+
+		<section class="chooseATrip" id="first">
+			<form id="firstForm" onsubmit="iChose(event)"> <!-- czy nie trzeba: id="chooseATripForm" -->
+				<p>Select the start date</p>
+				<input type="date" name="startDate" min="2018-02-28" max="2019-02-28">
+				<p>Select the end date</p>
+				<input type="date" name="endDate" min="2018-03-01" max="2019-02-28">
+				<p>Select the direction</p>
+				<input type="radio" name="destination" value="grenadines">Grenadines<br>
+				<input type="radio" name="destination" value="vierges">Îles Vierges<br>
+				<input type="radio" name="destination" value="Corse">Corse<br>
+				<input type="radio" name="destination" value="italie">Italie<br>
+				<input type="radio" name="destination" value="sardaigne">Sardaigne<br>
+				<input type="radio" name="destination" value="sicile">Sicile<br>
+				<input type="radio" name="destination" value="baleares">îles Baléares<br>
+				<input type="submit" value="Show the price">
+			</form>
+		</section>
+
+		<section class="price" id="second">
+			<form onsubmit="iWant(event)">
+				<p>The price for your trip
+				     to <span id="addDestination" ></span>
+					 from <span id="addStartDate"></span>
+					 to <span id="addEndDate"></span> 
+					 is: 12.000 €
+				</p>
+				<input type="submit" value="Book online">
+			</form>
+		</section>
+
+		<section class="fillUpForm" id="third">
+			<form id="thirdForm" onsubmit="iConfirm(event)">
+				First name:<br>
+				<input type="text" name="firstname"><br>
+				Last name:<br>
+				<input type="text" name="lastname"><br>
+				Email:<br>
+				<input type="email" name="email"><br>
+				<button class="myData">Confirm order</button> <!-- czy nie zmienić na input type=submit value=wybieram -->
+			</form>
+		</section>
+
+		<section class="confirmation" id="fourth">
+			<form >
+				<!-- wyświetlanie tego co było -->
+				<p><span id="addName"></span>, thank you for booking. The invoice was sent to your e-mail address: <span id="addEmail"></span>.</p>
+				<input type="submit" value="Finish">
+			</form>
+		</section>
+		<script type="text/javascript" src="reservation.js"></script> <!-- czy nie zmienić na input type=submit value=wybieram -->
 	</body>
 </html>
