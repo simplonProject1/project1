@@ -1,0 +1,304 @@
+@import url("../nirvana.css");
+
+html {
+	background-color: black;
+}
+#page { 
+	width: 1000px;
+	margin: auto;
+	background-color: #DCDCDC;
+	box-shadow: -6px 0px 6px #DCDCDC, 6px 0px 6px #DCDCDC;
+
+}
+
+body {
+	font-family: verdana, "dejavu sans", "bitstream vera sans", geneva, sans-serif;
+}
+
+
+ /* --- Barre de navigation --- */
+
+
+
+
+/* --- Article --- */
+
+article {
+
+}
+
+
+/* --- Titres --- */
+
+h1 {
+	font-family: impact, "arial black", sans-serif;
+	text-align: center;
+
+}
+
+h2{
+	text-align: center;
+	font-family: URW Chancery L, cursive;
+}
+
+h3 {
+
+}
+
+
+article p:first-letter /* Je veux que la première lettre de mes paragraphes... */
+{    
+float : left ; /* Flotte à gauche */
+font-size : 3em; /* Fasse une hauteur de 3 lignes */  
+font-family : Arial, Georgia, "Times New Roman", Times, serif; /* Soit mise en Arial si possible*/    
+font-weight : bold; /* Soit écrite en gras (c'est plus voyant) */
+margin-right : 5px; /* Qu'il y ait une marge de 5px à droite pour que ça colle pas trop au reste du texte */
+}
+
+
+
+/* --- 1ere page image de présentation --- */
+
+.boat {
+	margin-top: 60px;
+}
+
+
+/* --- 1ere page : caracteristiques --- */
+
+.sousListe li{
+    list-style-type: '- ';
+}
+
+.carac {
+	width: 40%;
+    background: linear-gradient(#2B75B6, #BCD2CF);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: justify;
+    color: white;
+    box-shadow: 5px 5px 5px silver;
+}
+.photo3 {
+	text-align: right;
+	
+}
+
+
+/* --- 1ere page : équipage --- */
+
+ .crew {
+    width: 40%;
+    background: linear-gradient(#2B75B6, #BCD2CF);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: justify;
+    color: white;
+    box-shadow: 5px 5px 5px silver;
+ }
+
+.marnico {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*--- class du site ---*/
+
+.welcome {
+	text-align: center;
+}
+
+.bienvenue { 
+	font-family: URW Chancery L, cursive;
+	font-size: 45px;
+	 }
+
+.ligne {
+    text-align: center;
+    color: #2B75B6;
+
+}
+
+
+/* page "destination" */
+
+#owlCarousel {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    background: linear-gradient(#2B75B6, #BCD2CF);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px silver;
+
+}
+
+#owl {
+    position: relative;
+    height: 350px;
+    padding: 0px;
+    margin: auto;
+    list-style-type: none;
+
+}
+#owl img{
+    margin-left: 50%;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.suite {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+}
+#owl li{
+    padding: 0;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 1;
+
+}
+
+/* 1er article : les grenadines*/
+
+.grenadine {
+    float: left;
+}
+
+.grenade {
+    z-index: 1;
+    width: 60%;
+    background: linear-gradient(#2B75B6, #BCD2CF);
+    border-radius: 8px;
+    padding: 25px;
+    text-align: justify;
+    color: white;
+    box-shadow: 5px 5px 5px silver;
+    margin left: 300px;
+    float: right;
+    position: relative;
+}
+
+/* 2eme article : les iles vierges */
+
+.vierges {
+    margin-top: 250px;
+}
+
+.fondbleu {
+     width: 60%;
+    background: linear-gradient(#2B75B6, #BCD2CF);
+    border-radius: 8px;
+    padding: 25px;
+    text-align: justify;
+    color: white;
+    box-shadow: 5px 5px 5px silver;
+    margin left: 300px;
+    float: right;
+    position: relative;
+}
+
+/* 3eme destinations : la corse */
+
+.corse {
+    margin-top: 70px;
+}
+
+
+/* 4eme destination : l'italie */
+
+.italie {
+    margin-top: 70px;
+}
+
+
+/* 5eme destination : la sardaigne */
+
+.sardaigne {
+    margin-top: 70px;
+}
+
+
+/* 6eme destination : la sicile */
+
+.sicile {
+    margin-top: 70px;
+}
+
+
+/* 7eme destination : les baleares */
+
+.baleares {
+    margin-top: 70px;
+}
+
+
+/* footer de toutes les pages */
+
+footer{
+
+    font-size: 20px;
+    font-family: Times New Roman,impact,arial,verdana;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    background-image: url(swirl-clipart-black-and-white-4.png);
+
+
+
+
+}
+.imageFlottante{
+align-items: center;
+
+}
+
+.ul{
+    display: flex;
+}
+
+footer a{
+font-family: arial;
+text-decoration: none;
+font-size: 20px;
+color: black;
+align-content: center;
+background-color: rgba(255,255,255, 0.6);
+padding: 15px;
+border-radius: 5px;
+
+}
+
+.foot {
+
+    font-size: 10px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.imgfoot{
+    margin-top: 100px;
+}
