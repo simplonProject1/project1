@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>reservation</title>
-		<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Kameron:400,700" rel="stylesheet"> 
 		<link rel="stylesheet" type="text/css" href="reservation.css"/>
 	</head>
 	<body>
@@ -22,85 +22,107 @@
 		<div id="page">
 
 			<section class="chooseATrip" id="first">
-				<form id="firstForm" onsubmit="iChose(event)">
+
+				<form id="firstForm" onsubmit="toChoose(event)">
 					<div class="selection">
 						<div class="dates">
 								<label for="startDate">Sélectionnez votre date de départ</label></br>
-								<input type="date" name="startDate" min="2018-02-28" max="2019-02-28"></br>
+								<input type="date" name="startDate" min="2018-02-28" max="2019-02-28" required></br>
 								<label for="endDate">Sélectionnez votre date de retour</label></br>
-								<input type="date" name="endDate" min="2018-03-01" max="2019-02-28">
+								<input type="date" name="endDate" min="2018-03-01" max="2019-02-28" required>
 						</div>
 						<div class="destination">
-							<label for="destination">Sélectionnez votre destination</label></br>
+
+							<label for="destination">Sélectionnez votre destination</label></br> <!-- how to make required? -->
 							<br>
-							<input type="radio" name="destination" value="dans les Îles Grenadines"> Grenadines<br>
-							<input type="radio" name="destination" value="dans les Îles Vierges"> Îles Vierges<br>
-							<input type="radio" name="destination" value="en Corse"> Corse<br>
-							<input type="radio" name="destination" value="en Italie"> Italie<br>
-							<input type="radio" name="destination" value="en Sardaigne"> Sardaigne<br>
-							<input type="radio" name="destination" value="en Sicile"> Sicile<br>
-							<input type="radio" name="destination" value="dans les Îles Baleares"> Îles Baléares<br>
+
+							<input type="radio" id="grenadines" name="destination" value="dans les Îles Grenadines">
+							<label for="grenadines"> Grenadines</label><br>
+
+							<input type="radio" id="vierges" name="destination" value="dans les Îles Vierges">
+							<label for="vierges"> Îles Vierges</label><br>
+
+							<input type="radio" id="corse" name="destination" value="en Corse">
+							<label for="corse"> Corse</label><br>
+
+							<input type="radio" id="italie" name="destination" value="en Italie">
+							<label for="italie"> Italie</label><br>
+
+							<input type="radio" id="sardaigne" name="destination" value="en Sardaigne">
+							<label for="sardaigne"> Sardaigne</label><br>
+
+							<input type="radio" id="sicile" name="destination" value="en Sicile">
+							<label for="sicile"> Sicile</label><br>
+
+							<input type="radio" id="baleares" name="destination" value="dans les Îles Baleares">
+							<label for="baleares"> Îles Baléares</label><br>
+
+
 							<br>
 							<input type="submit" value="Calcul du prix">
 						</div>
 					</div>
 				</form>
+
 			</section>
 
 			<section class="price" id="second">
-				<form onsubmit="iWant(event)">
+
+				<form id="firstForm" onsubmit="toReserve(event)">
 					<p>Le prix pour votre sèjour
-					     <span id="addDestination" ></span>
-						 entre le <span id="addStartDate"></span>
-						 et le <span id="addEndDate"></span> 
+					     <span id="addDestination" class="underline"></span>
+						 entre le <span id="addStartDate" class="underline"></span>
+						 et le <span id="addEndDate" class="underline"></span> 
 						 est de:<br>
 						 <br>
 						 <strong class="tripPrice">12.000 €</strong>
 					</p>
 					<input type="submit" value="Réservez en ligne">
 				</form>
+
 			</section>
 
 			<section class="fillUpForm" id="third">
-				<form id="thirdForm" onsubmit="iConfirm(event)">
+
+				<form id="thirdForm" onsubmit="toConfirm(event)">
 					<div>
 						Prénom:<br>
-						<input type="text" name="firstname"><br>
+						<input type="text" name="firstname" required><br>
 						Nom:<br>
-						<input type="text" name="lastname"><br>
+						<input type="text" name="lastname" required><br>
 						Email:<br>
-						<input type="email" name="email"><br>
+						<input type="email" name="email" required><br>
 						<br>
-						<button class="myData">Confirmez la commande</button> <!-- czy nie zmienić na input type=submit value=wybieram -->
+						<input type="submit" value="Confirmez la commande">
 					</div>
 				</form>
+
 			</section>
 
 			<section class="confirmation" id="fourth">
-				<form >
-					<!-- wyświetlanie tego co było -->
-					<p><span id="addName"></span>, merci de votre réservation. La facture vous a été envoyée sur votre adresse email: <span id="addEmail"></span>.</p>
+				<form>
+					<p><span id="addName" class="underline"></span>, merci de votre réservation. La facture vous a été envoyée sur votre adresse email: <span id="addEmail" class="underline"></span></p>
 					<input type="submit" value="Retour">
 				</form>
 			</section>
-		
 
-		<footer id="footer">
-        	<a href= "../contact/contact.html">Contactez-nous</a>
-            <a href="#page">Retour en haut de la page</a>
-            <a href="#footer">Rejoignez-nous</a>
-			<div class="imgfoot">
-                <img src="../facebook-icone-CmonSite.png" class="imageFlottante" id="a" alt="Facebook" width="70°" height="70°" />
-                <img src="../twitter-CmonSite.png" class="imageFlottante" id="b" alt="Twitter" width="70°" height="70°" />
-            </div>
-            <br /> <!-- wywalić! -->
-            <br />
-            <br />  
-        </footer>
-</div>
+			<footer id="footer">
+	        	<a href= "../contact/contact.html">Contactez-nous</a>
+	            <a href="#page">Retour en haut de la page</a>
+	            <a href="#footer">Rejoignez-nous</a>
+				<div class="imgfoot">
+	                <img src="../facebook-icone-CmonSite.png" class="imageFlottante" id="a" alt="Facebook" width="70°" height="70°" />
+	                <img src="../twitter-CmonSite.png" class="imageFlottante" id="b" alt="Twitter" width="70°" height="70°" />
+	            </div>
+	            <br />
+	            <br />
+	            <br />  
+	        </footer>
+
+		</div>
 
         <p class="foot"> © NIRVANA 2018 </p>
 
-		<script type="text/javascript" src="reservation.js"></script> <!-- czy nie zmienić na input type=submit value=wybieram -->
+		<script type="text/javascript" src="reservation.js"></script>
 	</body>
 </html>
