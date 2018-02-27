@@ -1,24 +1,40 @@
 @import url("../nirvana.css");
 
-body {
-	color: white;
+section {
+	min-height: 270px;
+	padding-top: 130px;
+	font-family: 'Sorts Mill Goudy', serif;
+	font-size: 1.2rem;
 }
 
-.chooseATrip {
-	padding-top: 150px;
-}
-
-.price {
-	padding-top: 150px;
+.price, .fillUpForm, .confirmation {
 	display: none;
 }
 
-.fillUpForm {
-	padding-top: 150px;
-	display: none;
+.selection {
+	display: flex;
+	justify-content: space-around;
 }
 
-.confirmation {
-	padding-top: 150px;
-	display: none;
+.dates input {
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+.price, .fillUpForm, .confirmation {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.tripPrice {
+	font-size: 2rem;
+}
+
+/* dodać required do formularza */
+
+
+
+footer {
+	margin-top: 50px;
 }

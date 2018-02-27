@@ -1,3 +1,6 @@
+/* zrobić jakąś randomową cenę */
+
+
 function iChose (event) {
 
 	event.preventDefault();
