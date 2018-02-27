@@ -1,1 +1,23 @@
-@import url("../nirvana.css");
+#services { 
+	width: 1000px;
+	margin: auto;
+	background-color: #DCDCDC;
+	box-shadow: -6px 0px 6px #DCDCDC, 6px 0px 6px #DCDCDC;
+}
+
+.servtext img {
+	margin-top: 70px;
+}
+
+.corsica {
+	margin-top: 70px;
+	padding: 10px;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+div iframe {
+	margin: auto;
+}
