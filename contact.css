@@ -1,0 +1,95 @@
+@import url("../nirvana.css");
+/*.page { 
+    width: 1000px;
+    margin: auto;
+    background-color: #777;
+    }*/
+
+
+.contactez-nous {
+	font-weight: 30px;
+	padding: 300px 0px; /*haut bas 200 et gauche droite 0*/
+	color: #0C1925  ;
+	text-align: center;
+}
+
+.h2 {
+	font-size: 40px;
+	color: #488CC9 ; /*code hexadecimal cad base 16 (chiffres de 0 à 10 + lettres de A à F*/
+	margin: 0 auto 20px auto;
+	border-bottom: 2px solid #A9CCE3;
+	padding-bottom: : 50px;
+	width: 400px;
+}
+
+form{
+	margin: 60px 0 20px 0;
+}
+
+label{
+	font-weight: bold;
+	font-size: 20px;
+	margin-right: 10px;
+	color: #777;
+}
+
+input {
+	padding: 10px;
+	font-size: 20px;
+	margin-right: 20px;
+	border-radius: 5px;
+	border: 2px solid #ddd
+}
+
+.button1{
+	color:#fff;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: #A9CCE3;
+	padding: 10px;
+	border-style: none;
+}
+
+
+.button1:hover /*hover : action lorsque la curseur est sur le "button"*/
+{
+	color:#fff;
+	background-color: #444;
+}
+
+textarea{
+	margin-right: 500px;
+	margin-top: 40px;
+}
+
+#owl {
+    position: relative;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.suite {
+    position: absolute;
+    max-height: 55px;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    -o-transition: opacity 3s;
+    -transition: opacity 3s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 1;
+}
+/* Non essential for slideshow */
+.suite {
+    font-size: 2em;
+    box-sizing: border-box;
+    color: silver;
+}
